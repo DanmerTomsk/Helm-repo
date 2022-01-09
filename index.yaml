@@ -9,7 +9,7 @@ entries:
     name: aspnet-auth
     type: application
     urls:
-    - https://danmertomsk.github.io/Helm-repo/aspnet-auth-0.1.1.tgz
+    - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-0.1.1.tgz
     version: 0.1.1
   aspnet-auth-db:
   - apiVersion: v2
@@ -20,6 +20,6 @@ entries:
     name: aspnet-auth-db
     type: application
     urls:
-    - https://danmertomsk.github.io/Helm-repo/aspnet-auth-db-0.1.0.tgz
+    - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-db-0.1.0.tgz
     version: 0.1.0
 generated: "2022-01-09T13:27:25.526636359Z"
