@@ -5,7 +5,6 @@ entries:
     appVersion: 1.0.1
     description: Create Auth-service for Auth-Forward OTUS homework
     created: "2022-01-09T13:27:25.529859467Z"
-    description: A Helm chart for Kubernetes
     digest: 24d2abcdf126dd7d3f9b5665fc020fb8c299474cfb335a6057bbf3e6e94af451
     name: aspnet-auth
     type: application
@@ -17,7 +16,6 @@ entries:
     appVersion: 1.0.0
     description: Create Database for Auth-Forward OTUS homework
     created: "2022-01-09T13:27:25.532518437Z"
-    description: A Helm chart for Kubernetes
     digest: 3a25f410aea59b6b539fb2393015fa65403b426d8a72ff893007104bbd7c5f1b
     name: aspnet-auth-db
     type: application
