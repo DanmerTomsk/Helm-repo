@@ -1,45 +1,43 @@
 apiVersion: v1
 entries:
-  aspnet-auth:
-  - apiVersion: v2
-    appVersion: 1.0.1
-    created: "2022-01-09T14:04:42.935145867Z"
-    description: A Helm chart for Kubernetes
-    digest: 0d53f010f9e89795f25bcb0cd4b471f0aa260301c9c52fc0d5c955fb26c7ce38
-    name: aspnet-auth
-    type: application
-    urls:
-    - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-0.1.2.tgz
-    version: 0.1.2
-  - apiVersion: v2
-    appVersion: 1.0.1
-    created: "2022-01-09T14:04:42.934188951Z"
-    description: A Helm chart for Kubernetes
-    digest: 24d2abcdf126dd7d3f9b5665fc020fb8c299474cfb335a6057bbf3e6e94af451
-    name: aspnet-auth
-    type: application
-    urls:
-    - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-0.1.1.tgz
-    version: 0.1.1
   aspnet-auth-db:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-01-09T14:04:42.937112217Z"
-    description: A Helm chart for Kubernetes
-    digest: c4be4dbd692eedd2a19f890477b90df33f10d282a29c70503311a15c5516a98e
+    created: "2022-01-09T14:52:00.03510513Z"
+    description: Database for Auth-Forward OTUS homework
+    digest: c08a0f7602ed66f09c0d688d236698a8550b22e1d55180a3134747e902b7a345
     name: aspnet-auth-db
     type: application
     urls:
     - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-db-0.1.1.tgz
     version: 0.1.1
+  aspnet-auth-service:
   - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2022-01-09T14:04:42.936153709Z"
-    description: A Helm chart for Kubernetes
-    digest: 3a25f410aea59b6b539fb2393015fa65403b426d8a72ff893007104bbd7c5f1b
-    name: aspnet-auth-db
+    appVersion: 1.0.1
+    created: "2022-01-09T14:52:00.036215799Z"
+    description: Auth-service for Auth-Forward OTUS homework
+    digest: 2e763f5377eb70569f0aaa9ce7f14e3e891d8c379e54efc55db5f9799b514fec
+    name: aspnet-auth-service
     type: application
     urls:
-    - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-db-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-01-09T14:04:42.927846238Z"
+    - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-service-0.1.2.tgz
+    version: 0.1.2
+  aspnet-auth-user-service:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-01-09T14:52:00.037791151Z"
+    dependencies:
+    - name: aspnet-auth
+      repository: https://danmertomsk.github.io/Helm-repo/
+      version: 0.1.2
+    - name: aspnet-auth-db
+      repository: https://danmertomsk.github.io/Helm-repo/
+      version: 0.1.1
+    description: A Helm chart for Kubernetes
+    digest: 9a85f3f6a35577fd732df49119c549b63e3d66997b05c6a5fa8eda64e16c28a7
+    name: aspnet-auth-user-service
+    type: application
+    urls:
+    - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-user-service-0.1.2.tgz
+    version: 0.1.2
+generated: "2022-01-09T14:52:00.034112602Z"
