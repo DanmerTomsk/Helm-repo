@@ -3,7 +3,7 @@ entries:
   aspnet-auth-db:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-01-09T14:52:00.03510513Z"
+    created: "2022-01-09T15:02:41.736773936Z"
     description: Database for Auth-Forward OTUS homework
     digest: c08a0f7602ed66f09c0d688d236698a8550b22e1d55180a3134747e902b7a345
     name: aspnet-auth-db
@@ -14,7 +14,7 @@ entries:
   aspnet-auth-service:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2022-01-09T14:52:00.036215799Z"
+    created: "2022-01-09T15:02:41.757647163Z"
     description: Auth-service for Auth-Forward OTUS homework
     digest: 2e763f5377eb70569f0aaa9ce7f14e3e891d8c379e54efc55db5f9799b514fec
     name: aspnet-auth-service
@@ -25,19 +25,19 @@ entries:
   aspnet-auth-user-service:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-01-09T14:52:00.037791151Z"
+    created: "2022-01-09T15:02:41.75928656Z"
     dependencies:
-    - name: aspnet-auth
+    - name: aspnet-auth-service
       repository: https://danmertomsk.github.io/Helm-repo/
       version: 0.1.2
     - name: aspnet-auth-db
       repository: https://danmertomsk.github.io/Helm-repo/
       version: 0.1.1
-    description: A Helm chart for Kubernetes
-    digest: 9a85f3f6a35577fd732df49119c549b63e3d66997b05c6a5fa8eda64e16c28a7
+    description: User-service for Auth-Forward OTUS homework
+    digest: da63a41b86db5dbc28483a2fff5a9134ab72454a315cd4d75b9335440fa09884
     name: aspnet-auth-user-service
     type: application
     urls:
     - https://danmertomsk.github.io/Helm-repo/docs/aspnet-auth-user-service-0.1.2.tgz
     version: 0.1.2
-generated: "2022-01-09T14:52:00.034112602Z"
+generated: "2022-01-09T15:02:41.735848049Z"
